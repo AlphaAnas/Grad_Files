@@ -1,0 +1,105 @@
+% !TeX root = wc11.tex
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{array}
+\usepackage{commath}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{amsmath, amssymb, amsthm}
+
+\runningheader{CS/MATH 113}{WC09: Sequences}{\theauthor}
+\runningheadrule
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\printanswers
+
+\title{Weekly Challenge 11: Sequences\\CS/MATH 113 Discrete Mathematics}
+\author{q2-team-49}  % <== for grading, replace with your team name, e.g. q1-team-420
+\date{Habib University | Spring 2023}
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\titledquestion{Mushroom Numbers}
+
+ Mushrooms play a vital role in the biosphere of our planet. They also have recreational uses, such as in understanding the mathematical series below. A mushroom number, $M_n$, is a figurate number that can be represented in the form of a mushroom shaped grid of points, such that the number of points is the mushroom number. A mushroom consists of a stem and a cap, while its height is the combined height of the two parts. Here is $M_5=23$:
+ 
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[scale=1.0]{m5_figurate.png}
+ 	\caption{Representation of $M_5$}
+ 	\label{fig:mushroom_anatomy}
+ \end{figure}
+ 
+ We can draw the mushroom that represents $M_{n+1}$ recursively, for $n \geq 1$:
+ \[ 
+ M_{n+1}=
+ \begin{cases} 
+ f(\textrm{Cap\_width}(M_n) + 1, \textrm{Stem\_height}(M_n) + 1, \textrm{Cap\_height}(M_n))  & n \textrm{ is even} \\
+ f(\textrm{Cap\_width}(M_n) + 1, \textrm{Stem\_height}(M_n) + 1, \textrm{Cap\_height}(M_n)+1) & n \textrm{ is odd}  \\      
+ \end{cases}
+ \]
+ 
+ Where $f$ represents some (deliberately unexplained) function and the functions Cap\_width, Stem\_height and Cap\_height are to be understood intuitively from the context. Study the first five mushrooms carefully and make sure to draw subsequent ones, as initial practice, using the given information (see also Figure 2).
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics{mushroom_series.png}
+ 	\\
+ 	\caption{Representation of $M_1,M_2,M_3,M_4,M_5$ mushrooms}
+ 	\label{fig:mushroom_series}
+ \end{figure}
+
+ 
+ \begin{parts}
+ 	\part[8] Derive a closed-form for $M_n$ in terms of $n$. Provide adequate explanation of your work to receive full credit. 
+ 	\begin{solution}
+		We can derive a pattern by forward substitution for  $n \geq 1$:
+
+		From the given representation $M_1=2$ and $M_1=f(2,0,1)$, we have using the given formulae:
+		% \[f(\textrm{Cap\_width}(M_n) + 1, \textrm{Stem\_height}(M_n) + 1, \textrm{Cap\_height}(M_n))\]
+						\[ M_{1+1}=f(2+1, 0+1, 1+1)\]
+						\[ M_{2}=f(3, 1, 2) \]
+						\[ M_{2+1}=f(3+1, 1+1, 2) \]
+						\[ M_{3}=f(4, 2, 2) \]
+						\[ M_{3+1}=f(4+1, 2+1, 2+1) \]
+						\[ M_{4}=f(5, 3, 3) \]
+						Similarly, it can be seen that every subsequent term has one added in Cap-Width, and Stem-Height while every term with the previous term odd has one more in Cap-height of the Mushroom.\\
+					    hence:
+						\[M_5=f(6,4,3)\]
+						\[M_6=f(7,5,4)\]
+						\[M_7=f(8,6,4)\]
+					Generally we can conclude that:\\
+					the Cap-width is one greater and Stem-height is one less than the Subscript of "M".\\
+					Moreover, Cap-height given by $\lfloor (n/2)  \rfloor +1$
+					
+					\[M_{n}=f(n+1,n-1,\lfloor(n/2)\rfloor +1)\]
+
+						
+		
+ 	\end{solution}
+ 	\part[2] What is the total height of the $20$th mushroom in the series?
+ 	\begin{solution}
+    	\[M_{20}=f(21,19,11)\]
+ 	\end{solution}
+ \end{parts}
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: 
+%%% End:
