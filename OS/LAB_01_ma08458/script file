@@ -1,0 +1,190 @@
+Script started on Tue Aug 20 16:58:46 2024
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ cal
+    August 2024       
+Su Mo Tu We Th Fr Sa  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 [7m20[27m 21 22 23 24  
+25 26 27 28 29 30 31  
+                      
+bash-3.2$ data[Ke
+Tue Aug 20 17:00:49 PKT 2024
+bash-3.2$ who[K[K[Kdate -c
+date: illegal option -- c
+usage: date [-jnRu] [-I[date|hours|minutes|seconds]] [-f input_fmt]
+            [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+bash-3.2$ date -c
+date: illegal option -- c
+usage: date [-jnRu] [-I[date|hours|minutes|seconds]] [-f input_fmt]
+            [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+bash-3.2$ whoami
+ma08458
+bash-3.2$ hostname
+HU-IMAC-VGL06.huf.local
+bash-3.2$ df
+Filesystem     512-blocks      Used Available Capacity iused      ifree %iused  Mounted on
+/dev/disk3s3s1  478724992  19764000 339236840     6%  393731 1696184200    0%   /
+devfs                 402       402         0   100%     696          0  100%   /dev
+/dev/disk3s6    478724992   4194344 339236840     2%       2 1696184200    0%   /System/Volumes/VM
+/dev/disk3s4    478724992  11730376 339236840     4%    1379 1696184200    0%   /System/Volumes/Preboot
+/dev/disk3s2    478724992    126760 339236840     1%      44 1696184200    0%   /System/Volumes/Update
+/dev/disk1s2      1024000     12328    750160     2%       1    3750800    0%   /System/Volumes/xarts
+/dev/disk1s1      1024000    131760    750160    15%      63    3750800    0%   /System/Volumes/iSCPreboot
+/dev/disk1s3      1024000       760    750160     1%      41    3750800    0%   /System/Volumes/Hardware
+/dev/disk3s1    478724992 101606040 339236840    24%  610516 1696184200    0%   /System/Volumes/Data
+map auto_home           0         0         0   100%       0          0     -   /System/Volumes/Data/home
+map -fstab              0         0         0   100%       0          0     -   /System/Volumes/Data/Network/Servers
+bash-3.2$ free
+bash: free: command not found
+bash-3.2$ exit[K[K[K[Kdate -ui[K
+Tue Aug 20 12:01:56 UTC 2024
+bash-3.2$ date -utc
+date: illegal option -- t
+usage: date [-jnRu] [-I[date|hours|minutes|seconds]] [-f input_fmt]
+            [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+bash-3.2$ date --utc
+date: illegal option -- -
+usage: date [-jnRu] [-I[date|hours|minutes|seconds]] [-f input_fmt]
+            [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+bash-3.2$ who 
+.CFUserTextEncoding  .bash_history        .vscode/             Downloads/           Movies/              Public/
+.DS_Store            .bash_sessions/      Desktop/             Lab01_Muhammad_Anas  Music/               lab_1_Muhammad_Anas
+.Trash/              .lesshst             Documents/           Library/             Pictures/            
+bash-3.2$ who wh[K[K[K[Ko[K[K[Kman man
+Unknown locale, assuming C
+[?1049h[?1h=MAN(1)                                             General Commands Manual                                             MAN(1)
+
+[1mNAME[0m
+     [1mman[0m, [1mapropos[0m, [1mwhatis[0m – display online manual documentation pages
+
+[1mSYNOPSIS[0m
+     [1mman[0m [[1m-adho[0m] [[1m-t[0m | [1m-w[0m] [[1m-M[0m [4mmanpath[24m] [[1m-P[0m [4mpager[24m] [[1m-S[0m [4mmansect[24m] [[1m-m[0m [4march[24m[:[4mmachine[24m]] [[1m-p[0m [[4meprtv[24m]] [[4mmansect[24m] [4mpage[24m [4m...[24m
+
+     [1mman[0m [1m-f[0m [[1m-d[0m] [[1m-M[0m [4mmanpath[24m] [[1m-P[0m [4mpager[24m] [[1m-S[0m [4mmansect[24m] [4mkeyword[24m [4m...[24m
+     [1mwhatis[0m [[1m-d[0m] [[1m-s[0m [4mmansect[24m] [4mkeyword[24m [4m...[24m
+
+     [1mman[0m [1m-k[0m [[1m-d[0m] [[1m-M[0m [4mmanpath[24m] [[1m-P[0m [4mpager[24m] [[1m-S[0m [4mmansect[24m] [4mkeyword[24m [4m...[24m
+     [1mapropos[0m [[1m-d[0m] [[1m-s[0m [4mmansect[24m] [4mkeyword[24m [4m...[24m
+
+[1mDESCRIPTION[0m
+     The [1mman[0m utility finds and displays online manual documentation pages.  If [4mmansect[24m is provided, [1mman[0m restricts the search
+     to the specific section of the manual.
+
+     The sections of the manual are:
+           1.   General Commands Manual
+           2.   System Calls Manual
+           3.   Library Functions Manual
+           4.   Kernel Interfaces Manual
+           5.   File Formats Manual
+           6.   Games Manual
+           7.   Miscellaneous Information Manual
+           8.   System Manager's Manual
+           9.   Kernel Developer's Manual
+
+     Options that [1mman[0m understands:
+
+     [1m-M[0m [4mmanpath[24m
+             Forces a specific colon separated manual path instead of the default search path.  See manpath(1).  Overrides
+             the MANPATH environment variable.
+
+     [1m-P[0m [4mpager[24m
+             Use specified pager.  Defaults to “less -sR” if color support is enabled, or “less -s”.  Overrides the MANPAGER
+             environment variable, which in turn overrides the PAGER environment variable.
+
+     [1m-S[0m [4mmansect[24m
+             Restricts manual sections searched to the specified colon delimited list.  Defaults to
+             “1:8:2:3:3lua:n:4:5:6:7:9:l”.  Overrides the MANSECT environment variable.
+
+     [1m-a[0m      Display all manual pages instead of just the first found for each [4mpage[24m argument.
+:[K[K[K:[K[K[K:[K[K
+:[K[K     [1m-d[0m      Print extra debugging information.  Repeat for increased verbosity.  Does not display the manual page.
+:[K[K
+:[K[K     [1m-f[0m      Emulate whatis(1).  Note that only a subset of options will have any effect when [1mman[0m is invoked in this mode.
+:[K[K             See the below description of [1mwhatis[0m options for details.
+:[K[K
+:[K[K     [1m-h[0m      Display short help message and exit.
+:[K[K
+:[K[K     [1m-k[0m      Emulate apropos(1).  Note that only a subset of options will have any effect when [1mman[0m is invoked in this mode.
+:[K[K             See the below description of [1mapropos[0m options for details.
+:[K[K
+:[K[K     [1m-m[0m [4march[24m[:[4mmachine[24m]
+:[K[K             Override the default architecture and machine settings allowing lookup of other platform specific manual pages.
+:[K[K             This option is accepted, but not implemented, on macOS.
+:[K[K
+:[K[K[?1l>[?1049lbash-3.2$ whatis ls
+[?1h=git-ls-files(1)          - Show information about files in the index and the working tree
+git-ls-remote(1)         - List references in a remote repository
+git-ls-tree(1)           - List the contents of a tree object
+git-mktree(1)            - Build a tree-object from ls-tree formatted text
+builtin(1), !(1), %(1), .(1), :(1), @(1), [(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1 ), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), e chotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1),  filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1) , jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1),  printenv(1), printf(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1),  settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times (1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), u ntil(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+DateTime::Locale::en_LS(3pm) - Locale data examples for the English Lesotho (en-LS) locale
+builtin(1), !(1), %(1), .(1), :(1), @(1), [(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1 ), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), e chotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1),  filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1) , jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1),  printenv(1), printf(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1),  settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times (1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), u ntil(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+[K[?1l>bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ whatis ls cp rm mv
+[?1h=git-ls-files(1)          - Show information about files in the index and the working tree
+git-ls-remote(1)         - List references in a remote repository
+git-ls-tree(1)           - List the contents of a tree object
+git-mktree(1)            - Build a tree-object from ls-tree formatted text
+builtin(1), !(1), %(1), .(1), :(1), @(1), [(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1 ), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), e chotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1),  filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1) , jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1),  printenv(1), printf(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1),  settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times (1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), u ntil(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+DateTime::Locale::en_LS(3pm) - Locale data examples for the English Lesotho (en-LS) locale
+builtin(1), !(1), %(1), .(1), :(1), @(1), [(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1 ), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), e chotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1),  filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1) , jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1),  printenv(1), printf(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1),  settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times (1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), u ntil(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+cp(1)                    - copy files
+cp(1)                    - copy files
+git-rm(1)                - Remove files from the working tree and from the index
+rm(1), unlink(1)         - remove directory entries
+DateTime::Locale::rm(3pm) - Locale data examples for the Romansh (rm) locale
+DateTime::Locale::rm_CH(3pm) - Locale data examples for the Romansh Switzerland (rm-CH) locale
+rm(1), unlink(1)         - remove directory entries
+git-mv(1)                - Move or rename a file, a directory, or a symlink
+mv(1)                    - move files
+mv(1)                    - move files
+[K[?1l>bash-3.2$ appro[K[K[Krops[Kos userid
+[?1h=pthread_setugid_np(2)    - Set the per-thread userid and single groupid
+[K[?1l>bash-3.2$ apro[K[K[K[Kman user
+Unknown locale, assuming C
+No manual entry for user
+bash-3.2$ man userid
+Unknown locale, assuming C
+No manual entry for userid
+bash-3.2$ man User
+Unknown locale, assuming C
+No manual entry for User
+bash-3.2$ hostname ---[Khelp
+hostname: illegal option -- -
+usage: hostname [-f] [-s | -d] [name-of-host]
+bash-3.2$ apropos --help
+/usr/bin/apropos: illegal option -- -
+usage: apropos [-d] [-s mansect] keyword [...]
+bash-3.2$ apropos user[K[K[K[K[K -d
+-- Searching PATH for man directories
+--   Adding /usr/share/man to manpath
+--   Adding /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man to manpath
+--   Adding /Library/Developer/CommandLineTools/usr/share/man to manpath
+-- Adding default manpath entries
+-- Parsing config file: /etc/man.conf
+-- Using manual path: /usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man
+-- Available manual locales: 
+-- Using pager: /usr/bin/less -s
+-- Using makewhatis.local: /usr/share/man
+-- Using makewhatis.local: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man
+-- Found whatis: /Library/Developer/CommandLineTools/usr/share/man/whatis
+-- /bin/cat
+bash-3.2$ exit
+exit
+
+Script done on Tue Aug 20 17:04:57 2024
